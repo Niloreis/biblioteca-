@@ -1,0 +1,27 @@
+
+package javatarefas;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Biblioteca {
+    private String nome;
+    private List<Livro> lista;
+    
+        public Biblioteca(String nome){
+            this.nome = nome;
+            lista = new ArrayList ();
+    }
+        public void adicionarLivro(Livro livro){
+            lista.add(livro);
+        }
+        
+        public void listarlivro(){
+            for (Livro livro:lista){
+                System.out.println("Livro" + livro.getTitulo());
+            }
+                
+        }
+}
+
+
