@@ -1,0 +1,21 @@
+
+package javatarefas;
+
+public class TesteBiblioteca {
+    public static void main(String[] args) {
+        Autor a1 = new Autor("Juca", "Brasileiro");
+        Autor a2 = new Autor("Angela", "Portuguesa");
+        
+        Livro l1 = new Livro("1234", "a1", "Aprendendo Java");
+        Livro l2 = new Livro("96325", "a1","Aprendendo Python");
+        Livro l3 = new Livro("11223","a2","Banco de dados");
+        
+        Biblioteca b1 = new Biblioteca("ABC");
+        
+        b1.adicionarLivro(l1);
+        b1.adicionarLivro(l2);
+        b1.adicionarLivro(l3);
+        
+        b1.listarlivro();
+    }
+}
